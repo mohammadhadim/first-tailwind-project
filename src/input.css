@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-sm bg-blue-700 px-2 py-1 text-white transition-all duration-200 hover:bg-blue-800;
+  }
+  .before-after-why {
+    @apply absolute cursor-pointer rounded-xl bg-black p-0.5 px-2 text-xs text-white opacity-80;
+  }
+  .courses-style {
+    @apply border-b-2 border-b-zinc-100 py-3;
+  }
+}

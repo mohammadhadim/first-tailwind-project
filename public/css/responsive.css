@@ -1,0 +1,123 @@
+@media (max-width: 96em) {
+  /* 1536px */
+  .header-title {
+    font-size: 3rem;
+  }
+  .why-sec-content {
+    width: 32rem;
+  }
+}
+
+@media (max-width: 84em) {
+  /* 1344px */
+  html {
+    font-size: 88%;
+  }
+
+  .header-title-wrapper {
+    width: 39rem;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .main-photos-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+  }
+
+  .shot-iphone-img {
+    height: 100%;
+  }
+
+  .shot-iphone-img-wrapper {
+    height: 38rem;
+    width: 34rem;
+  }
+
+  .what-sec-wrapper {
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  .why-sec-img1 {
+    height: 21rem;
+  }
+
+  .why-sec-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 64em) {
+  /* 1024px */
+  html {
+    font-size: 80%;
+  }
+
+  .nav-sec {
+    width: 100%;
+  }
+
+  .main-nav-wrapper {
+    display: none;
+  }
+
+  .main-nav-wrapper {
+    background-color: #e2e8f0;
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 200ms;
+    transform: translatex(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav-wrapper {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-pur {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .close-icon {
+    z-index: 3;
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0.4rem;
+    right: 0.4rem;
+  }
+
+  .nav-open .close-icon {
+    display: block;
+  }
+
+  .nav-open .menu-icon {
+    display: none;
+  }
+}
